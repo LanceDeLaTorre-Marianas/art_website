@@ -134,31 +134,17 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
     z-index: 1;
 }
 
-.slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover {
-    opacity: 1;
-}
-
-
 #about {
-    background-color: red; /* Set your desired background color */
+    background-color: red; 
     width: 50%;
-    padding: 20px; /* Add padding for spacing inside the section */
-    text-align: center; /* Center-align text within the section */
+    padding: 20px; 
+    text-align: center; 
     margin: auto;
-    margin-top: 20px; /* Add margin at the top for spacing */
+    margin-top: 20px; 
 }
 
 #about h2 {
-    color: white; /* Set the color of the heading text */
+    color: white; 
     background-color: rgb(15, 15, 15);
     width: 30%;
     margin: auto;
@@ -166,12 +152,12 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 
 #about p {
     font-family: Arial, sans-serif;
-    font-style: bold; /* Apply style to the paragraph text */
-    color: rgb(15, 15, 15); /* Set the color of the paragraph text */
+    font-style: bold; 
+    color: rgb(15, 15, 15); 
     background-color: white;
     width: 50%;
-    margin: 0 auto; /* Center the paragraph text horizontally */
-    display: block; /* or display: inline-block; */
+    margin: 0 auto; 
+    display: block; 
 
 }
 
