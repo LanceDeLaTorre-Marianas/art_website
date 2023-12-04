@@ -150,16 +150,6 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
     margin: auto;
 }
 
-#about p {
-    font-family: Arial, sans-serif;
-    font-style: bold; 
-    color: rgb(15, 15, 15); 
-    background-color: white;
-    width: 50%;
-    margin: 0 auto; 
-    display: block; 
-
-}
 
 ::-webkit-scrollbar { 
     width: 9px;
