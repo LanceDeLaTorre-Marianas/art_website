@@ -1,15 +1,16 @@
+
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
 
+
 body {
     background-color: black;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -17,23 +18,8 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
-    width: 100%;
     font-size: 20px;
-    text-shadow: -4px 4px 0px black,
-    -5px 5px 0px black;
-}
-
-a:hover {
-    background-color: white;
-    color: black;
-    font-weight: bolder;
-    border-radius: 0px;
-}
-
-section {
-    background-color: white;
-    margin: auto;
-    width: 100%; 
+    text-shadow: -4px 4px 0px black, -5px 5px 0px black;
 }
 
 .text-box {
@@ -42,12 +28,12 @@ section {
     display: inline-block;
 }
 
-nav {
-    background-color: #444;
+.nav1 {
+    box-shadow:  black;
     width: 100%;
 }
 
-nav ul {
+.nav1 ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -55,30 +41,153 @@ nav ul {
     justify-content: center;
 }
 
-nav li {
+.nav1 li {
     margin: 0;
 }
 
-nav a {
+.nav1 a {
     display: block;
     padding: 10px 20px;
     color: #fff;
     text-decoration: none;
 }
 
-#art-image {
-
-    width: 700px; 
-    height: auto;
-    border: 2px solid white;
-    margin: 20px;
+aside { /*Chapter Box*/
+    display: inline-flex;
+    width: 13%;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
 }
-
-
-footer {
-    text-align: center;
-    padding: 10px 663px;
+.nav2 { /*Chapter Box Word Box*/
     background-color: rgb(15, 15, 15);
-    color: #fff;
+    width: 100%;
 }
 
+.nav2 ul { /*Chapter Box */
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 li { /*Chapter Box Word Box*/
+    margin: 0;
+}
+
+.nav2 a { /*Chapter Box Text Links*/ 
+    display: block;
+    padding: 10px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav1 a:hover { /*Nav 1 Hover*/
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0px;
+    box-shadow:-3px 4px 0px red;
+    
+}
+
+aside .nav2 a:hover { /*Nav 2 Hover*/
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 0px;
+    box-shadow:-3px 4px 0px red;
+}
+
+.container {
+    padding: 2rem;
+    transform: translateY(-30%);
+    display: inline;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/12;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border: 5px solid white
+}
+
+.slider img { 
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+#about {
+    background-color: red; /* Set your desired background color */
+    width: 50%;
+    padding: 20px; /* Add padding for spacing inside the section */
+    text-align: center; /* Center-align text within the section */
+    margin: auto;
+    margin-top: 20px; /* Add margin at the top for spacing */
+}
+
+#about h2 {
+    color: white; /* Set the color of the heading text */
+    background-color: rgb(15, 15, 15);
+    width: 30%;
+    margin: auto;
+}
+
+#about p {
+    font-family: Arial, sans-serif;
+    font-style: bold; /* Apply style to the paragraph text */
+    color: rgb(15, 15, 15); /* Set the color of the paragraph text */
+    background-color: white;
+    width: 50%;
+    margin: 0 auto; /* Center the paragraph text horizontally */
+    display: block; /* or display: inline-block; */
+
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: rgb(15, 15, 15) 15 15;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+ 
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
