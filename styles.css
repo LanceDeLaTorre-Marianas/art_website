@@ -22,6 +22,20 @@ header {
     text-shadow: -4px 4px 0px black, -5px 5px 0px black;
 }
 
+#about {
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the section */
+}
+
+h2 {
+    color: black; /* Adjust the color as needed */
+}
+
+p {
+    font-size: 16px; /* Adjust the font size as needed */
+    line-height: 1.6; /* Adjust the line height as needed */
+}
+
 .text-box {
     background-color: red;
     padding: 10px;
@@ -161,9 +175,9 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar { 
     width: 9px;
-    height: 9px;
+    height: 15px;
 }
  
 ::-webkit-scrollbar-track {
