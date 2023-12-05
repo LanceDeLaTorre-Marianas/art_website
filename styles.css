@@ -139,7 +139,7 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 
 #about {
     background-color: red; 
-    width: 50%;
+    width: 50vw;
     padding: 20px; 
     text-align: center; 
     margin: auto;
@@ -149,16 +149,17 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 #about h2 {
     color: white; 
     background-color: rgb(15, 15, 15);
-    width: 30%;
+    width: 20vw;
     margin: auto;
 }
 
 #about p {
+    font-size: 1vw;
     font-family: Arial, sans-serif;
     font-style: bold; 
     color: rgb(15, 15, 15); 
     background-color: white;
-    width: 50%;
+    width: 30vw;
     margin: 0 auto; 
     display: block; 
 
