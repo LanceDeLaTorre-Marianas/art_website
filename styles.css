@@ -81,6 +81,7 @@ aside { /*Chapter Box*/
     padding: 10px 5px;
     color: white;
     text-decoration: none;
+    font-size: 1vw;
 }
 
 .nav1 a:hover { /*Nav 1 Hover*/
