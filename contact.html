@@ -22,10 +22,17 @@
     </nav>
 
     <section id="contact">
-        <h2>Contact Section</h2>
-            <p>don't contact me</p>
+            <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
+                <fieldset>
+                    <legend>Contact</legend>
+                    <label for="email">User Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email here">
+                    <Label for="message">Phone:</label>
+                    <input type="message" name="message" id="message" placeholder="Enter your message here">
+                </fieldset>
+                 <input type="submit">
+            </form>
     </section>
-
     <footer>
         <p>This is where my footer goes</p>
     </footer>

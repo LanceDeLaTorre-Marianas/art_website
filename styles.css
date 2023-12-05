@@ -165,6 +165,63 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 
 }
 
+#contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styles to the form fieldset */
+#contact fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Apply styles to the form legend */
+#contact legend {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+}
+
+/* Apply styles to the form labels */
+#contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: yellow;
+}
+
+/* Apply styles to the form inputs */
+#contact input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Apply styles to the form submit button */
+#contact input[type="submit"] {
+    background-color: yellow;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #45a049;
+}
 ::-webkit-scrollbar { 
     width: 9px;
     height: 15px;
