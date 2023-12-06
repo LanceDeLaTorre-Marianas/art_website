@@ -15,9 +15,9 @@
 <main>
     <nav class="nav1">
         <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about.html">About</a></li>
-            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="../index.html" onmouseover="playSound('1911-reload-6248.mp3')">Home</a></li>
+            <li><a href="../about.html" onmouseover="playSound('1911-reload-6248.mp3')">About</a></li>
+            <li><a href="../contact.html" onmouseover="playSound('1911-reload-6248.mp3')">Contact</a></li>
         </ul>
     </nav>
 </main>
@@ -26,13 +26,29 @@
 <aside>
     <nav class="nav2">
        <ul>
-           <li><a href="../ChapterNavList/AllSeries.html">&#10070 All Series</a></li>
-           <li><a href="../ChapterNavList/MasqueRaid.html">&#9876 MasqueRaid</a></li>
-           <li><a href="../ChapterNavList/N.O.I.R.html">&#9775 N. O. I. R.</a></li>
-           <li><a href="../ChapterNavList/Kaleidos.html">&#9812 Kaleidos</a></li>
+           <li><a href="../ChapterNavList/AllSeries.html" onmouseover="playSound('1911-reload-6248.mp3')">&#10070 All Series</a></li>
+           <li><a href="../ChapterNavList/MasqueRaid.html" onmouseover="playSound('1911-reload-6248.mp3')">&#9876 MasqueRaid</a></li>
+           <li><a href="../ChapterNavList/N.O.I.R.html" onmouseover="playSound('1911-reload-6248.mp3')">&#9775 N. O. I. R.</a></li>
+           <li><a href="../ChapterNavList/Kaleidos.html" onmouseover="playSound('1911-reload-6248.mp3')">&#9812 Kaleidos</a></li>
        </ul>
    </nav>
 </aside>
+
+<script>
+    function playSound(audioFile, volume) {
+        var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        var audio = new Audio(audioFile);
+
+        var source = audioContext.createMediaElementSource(audio);
+        var gainNode = audioContext.createGain(); 
+        source.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        gainNode.gain.value = volume || 0.05; /*Default Volume*/
+
+        audio.play()
+    }
+</script>
 
 <section class="container">
     <div class="slider-wrapper">
