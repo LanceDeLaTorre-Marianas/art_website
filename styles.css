@@ -10,6 +10,7 @@ ul {
 
 body {
     background-color: black;
+    width: 100vw;
     font-family: Arial, sans-serif;
     align-items: center;
     justify-content: center;
@@ -20,14 +21,18 @@ body {
 
 header {
     background-color: rgb(15, 15, 15);
+    position: relative;
     color: #fff;
     text-align: center;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     padding: 20px;
     font-size: 20px;
     text-shadow: -4px 4px 0px black, -5px 5px 0px black;
+    box-sizing: border-box;
 }
-
+  
 
 .text-box {
     background-color: red;
@@ -170,7 +175,7 @@ aside .nav2 a:hover {
 }
 
 .container {
-    padding: 2rem;
+    padding: 2vw;
     transform: translateY(-30%);
     display: inline;
 }
@@ -330,13 +335,12 @@ aside .nav2 a:hover {
 }
 
 footer {
-    position: absolute;
-    bottom: -80%;
+    position: fixed;
+    bottom: 0;
     left: 0;
     width: 100vw;
-    height: 50px;
+    height: 20px;
     background-color: #333;
     color: #fff; 
-    text-align: center;
     line-height: 50px; 
 }
