@@ -14,6 +14,8 @@ body {
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
+
+    cursor: url('images/iconmonstr-crosshair-7-72.png') 36 36, auto !important;
 }
 
 header {
@@ -30,6 +32,23 @@ header {
     background-color: red;
     padding: 10px;
     display: inline-block;
+}
+
+.custom-cursor {
+    cursor: url('images/iconmonstr-crosshair-7-72.png') 36 36, auto;
+}
+
+.custom-cursor * {
+    pointer-events: all;
+}
+
+.custom-cursor .nav1 a,
+.custom-cursor .nav2 a {
+    pointer-events: all;
+}
+
+.custom-cursor footer {
+    pointer-events: all;
 }
 
 .nav1,
@@ -96,23 +115,6 @@ aside {
     color: white;
     text-decoration: none;
     font-size: 1vw;
-}
-
-.custom-cursor {
-    cursor: url('images/iconmonstr-crosshair-7-72.png') 36 36, auto;
-}
-
-.custom-cursor * {
-    pointer-events: all;
-}
-
-.custom-cursor .nav1 a,
-.custom-cursor .nav2 a {
-    pointer-events: all;
-}
-
-.custom-cursor footer {
-    pointer-events: all;
 }
 
 .nav1 a:hover {
