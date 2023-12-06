@@ -35,6 +35,22 @@
    </nav>
 </aside>
 
+<script>
+    function playSound(audioFile, volume) {
+        var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        var audio = new Audio(audioFile);
+
+        var source = audioContext.createMediaElementSource(audio);
+        var gainNode = audioContext.createGain(); 
+        source.connect(gainNode);
+        gainNode.connect(audioContext.destination);
+
+        gainNode.gain.value = volume || 0.05; /*Default Volume*/
+
+        audio.play()
+    }
+</script>
+
 <footer>
     <p>This is where my footer goes</p>
 </footer>

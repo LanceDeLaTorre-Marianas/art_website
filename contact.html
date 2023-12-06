@@ -22,6 +22,22 @@
         </ul>
     </nav>
 
+    <script>
+        function playSound(audioFile, volume) {
+            var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            var audio = new Audio(audioFile);
+    
+            var source = audioContext.createMediaElementSource(audio);
+            var gainNode = audioContext.createGain(); 
+            source.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+    
+            gainNode.gain.value = volume || 0.05; /*Default Volume*/
+    
+            audio.play()
+        }
+    </script>
+    
     <section id="contact">
             <form method="POST" action="https://jkorpela.fi/cgi-bin/echo.cgi" target="cgi-results">
                 <fieldset>
