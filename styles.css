@@ -114,6 +114,10 @@ aside {
     pointer-events: all;
 }
 
+.custom-cursor footer {
+    pointer-events: all;
+}
+
 .nav1 a:hover {
     /*Nav 1 Hover*/
     background-color: white;
