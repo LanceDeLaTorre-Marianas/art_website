@@ -35,7 +35,6 @@ header {
 .nav1,
 .nav2 {
     pointer-events: all;
-    /* Ensure custom cursor is applied to clickable elements */
 }
 
 .nav1 {
@@ -103,12 +102,10 @@ aside {
     cursor: url('images/iconmonstr-crosshair-7-72.png') 36 36, auto;
 }
 
-/* Add this rule to ensure the custom cursor is applied to clickable elements */
 .custom-cursor * {
     pointer-events: all;
 }
 
-/* Add this rule to re-enable pointer events for links (or other specific elements) within your navigation */
 .custom-cursor .nav1 a,
 .custom-cursor .nav2 a {
     pointer-events: all;
@@ -210,6 +207,7 @@ aside .nav2 a:hover {
 }
 
 #about p {
+    position: center;
     font-size: 1vw;
     font-family: Arial, sans-serif;
     font-style: bold;
@@ -230,14 +228,14 @@ aside .nav2 a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Apply styles to the form fieldset */
+/* Form fieldset styles*/
 #contact fieldset {
     border: none;
     padding: 0;
     margin: 0;
 }
 
-/* Apply styles to the form legend */
+/* Form legend styles*/
 #contact legend {
     text-align: center;
     font-size: 2vw;
@@ -245,7 +243,7 @@ aside .nav2 a:hover {
     color: white;
 }
 
-/* Apply styles to the form labels */
+/* Form labels styles*/
 #contact label {
     display: block;
     margin-bottom: 8px;
@@ -253,7 +251,7 @@ aside .nav2 a:hover {
     color: yellow;
 }
 
-/* Apply styles to the form inputs */
+/* Form inputs style*/
 #contact input {
     width: 100%;
     padding: 10px;
@@ -263,7 +261,7 @@ aside .nav2 a:hover {
     border-radius: 4px;
 }
 
-/* Apply styles to the form submit button */
+/* Form submit button style*/
 #contact input[type="submit"] {
     background-color: yellow;
     color: black;
@@ -294,4 +292,16 @@ aside .nav2 a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: red;
+}
+
+footer {
+    position: absolute;
+    bottom: -80%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: #fff; 
+    text-align: center;
+    line-height: 50px; 
 }
