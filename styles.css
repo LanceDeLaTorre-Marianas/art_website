@@ -1,5 +1,8 @@
-
-body, h1, h2, p, ul {
+body,
+h1,
+h2,
+p,
+ul {
     margin: 0;
     padding: 0;
 }
@@ -29,12 +32,14 @@ header {
     display: inline-block;
 }
 
-.nav1, .nav2 {
-    pointer-events: all; /* Ensure custom cursor is applied to clickable elements */
+.nav1,
+.nav2 {
+    pointer-events: all;
+    /* Ensure custom cursor is applied to clickable elements */
 }
 
 .nav1 {
-    box-shadow:  black;
+    box-shadow: black;
     width: 100%;
 }
 
@@ -57,7 +62,8 @@ header {
     text-decoration: none;
 }
 
-aside { /*Chapter Box*/
+aside {
+    /*Chapter Box*/
     display: inline-flex;
     width: 13%;
     background-color: white;
@@ -66,21 +72,26 @@ aside { /*Chapter Box*/
     box-sizing: border-box;
     transform: translateX(20px);
 }
-.nav2 { /*Chapter Box Word Box*/
+
+.nav2 {
+    /*Chapter Box Word Box*/
     background-color: rgb(15, 15, 15);
     width: 100%;
 }
 
-.nav2 ul { /*Chapter Box */
+.nav2 ul {
+    /*Chapter Box */
     margin: 0;
     padding: 0;
-}   
+}
 
-.nav2 li { /*Chapter Box Word Box*/
+.nav2 li {
+    /*Chapter Box Word Box*/
     margin: 0;
 }
 
-.nav2 a { /*Chapter Box Text Links*/ 
+.nav2 a {
+    /*Chapter Box Text Links*/
     display: block;
     padding: 10px 5px;
     color: white;
@@ -91,6 +102,7 @@ aside { /*Chapter Box*/
 .custom-cursor {
     cursor: url('images/iconmonstr-crosshair-7-72.png') 36 36, auto;
 }
+
 /* Add this rule to ensure the custom cursor is applied to clickable elements */
 .custom-cursor * {
     pointer-events: all;
@@ -102,16 +114,18 @@ aside { /*Chapter Box*/
     pointer-events: all;
 }
 
-.nav1 a:hover { /*Nav 1 Hover*/
+.nav1 a:hover {
+    /*Nav 1 Hover*/
     background-color: white;
     color: black;
     font-weight: bolder;
     border-radius: 0px;
-    box-shadow:-6px 6px 0px red;
-    
+    box-shadow: -6px 6px 0px red;
+
 }
 
-aside .nav2 a:hover { /*Nav 2 Hover*/
+aside .nav2 a:hover {
+    /*Nav 2 Hover*/
     background-color: white;
     color: black;
     font-weight: bolder;
@@ -137,15 +151,35 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    border: 5px solid white
+    border: 5px solid white;
+
+    scrollbar-width: thin;
+    scrollbar-color: white rgb(15, 15, 15);
+
+    &::-webkit-scrollbar {
+        width: 9px;
+        height: 15px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgb(15, 15, 15);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background:darkred;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: red;
+    }
 }
 
-.slider img { 
+.slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
 }
 
-.slider-nav{
+.slider-nav {
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -156,16 +190,16 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 }
 
 #about {
-    background-color: red; 
+    background-color: red;
     width: 50vw;
-    padding: 20px; 
-    text-align: center; 
+    padding: 20px;
+    text-align: center;
     margin: auto;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 #about h2 {
-    color: white; 
+    color: white;
     background-color: rgb(15, 15, 15);
     width: 20vw;
     margin: auto;
@@ -174,12 +208,12 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 #about p {
     font-size: 1vw;
     font-family: Arial, sans-serif;
-    font-style: bold; 
-    color: rgb(15, 15, 15); 
+    font-style: bold;
+    color: rgb(15, 15, 15);
     background-color: white;
     width: 30vw;
-    margin: 0 auto; 
-    display: block; 
+    margin: 0 auto;
+    display: block;
 
 }
 
@@ -240,19 +274,20 @@ aside .nav2 a:hover { /*Nav 2 Hover*/
 #contact input[type="submit"]:hover {
     background-color: #45a049;
 }
-::-webkit-scrollbar { 
+
+::-webkit-scrollbar {
     width: 9px;
     height: 15px;
 }
- 
+
 ::-webkit-scrollbar-track {
     background: rgb(15, 15, 15) 15 15;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     background: white;
 }
- 
+
 ::-webkit-scrollbar-thumb:hover {
     background: red;
 }
