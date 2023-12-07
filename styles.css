@@ -24,14 +24,14 @@ header {
     position: relative;
     color: #fff;
     text-align: center;
-    width: 100%;
-    max-width: 100%;
+    width: 100vw;
     margin: 0 auto;
     padding: 20px;
     font-size: 20px;
     text-shadow: -4px 4px 0px black, -5px 5px 0px black;
     box-sizing: border-box;
-}
+    overflow: hidden;
+    }
   
 
 .text-box {
@@ -143,40 +143,9 @@ aside .nav2 a:hover {
 }
 
 
-.triangle {
-    position: absolute;
-    width: 40%;
-    height: 10px;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid red;
-    z-index: -1;
-    transform: rotate(-26deg) translateX(500px) translateY(400px);
-}
-.triangle2 {
-    position: absolute;
-    width: 545px;
-    height: 10px;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid white;
-    z-index: -1;
-    transform: rotate(-39deg) translateX(500px) translateY(440px);
-}
-.triangle3 {
-    position: absolute;
-    width: 455px;
-    height: 10px;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 100px solid red;
-    z-index: -1;
-    transform: rotate(-44deg) translateX(370px) translateY(410px);
-}
-
 .container {
+    position: relative;
     padding: 2vw;
-    transform: translateY(-30%);
     display: inline;
 }
 
@@ -228,6 +197,37 @@ aside .nav2 a:hover {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+}
+
+.triangle {
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    z-index: -1;
+    transform: rotate(-26deg) translateX(500px) translateY(400px);
+}
+.triangle2 {
+    position: absolute;
+    width: 545px;
+    height: 10px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;
+    z-index: -1;
+    transform: rotate(-39deg) translateX(500px) translateY(440px);
+}
+.triangle3 {
+    position: absolute;
+    width: 455px;
+    height: 10px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    z-index: -1;
+    transform: rotate(-44deg) translateX(370px) translateY(410px);
 }
 
 #about {
@@ -343,4 +343,5 @@ footer {
     background-color: #333;
     color: #fff; 
     line-height: 50px; 
+    overflow: hidden;
 }
