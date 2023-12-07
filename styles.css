@@ -7,16 +7,15 @@ ul {
     padding: 0;
 }
 
-
 body {
     background: linear-gradient(130deg, black, black, red);
-    width: 100vw;
     height: 100vw;
     font-family: Arial, sans-serif;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-
+    margin: 0; 
+    overflow-x: hidden; 
     cursor: url('images/iconmonstr-crosshair-7-72.png') 36 36, auto !important;
 }
 
@@ -25,14 +24,14 @@ header {
     position: relative;
     color: #fff;
     text-align: center;
-    width: 100vw;
     margin: 0 auto;
     padding: 20px;
     font-size: 20px;
     text-shadow: -4px 4px 0px black, -5px 5px 0px black;
     box-sizing: border-box;
     overflow: hidden;
-    }
+}
+
   
 
 .text-box {
