@@ -209,7 +209,7 @@ aside .nav2 a:hover {
     border-right: 50px solid transparent;
     border-bottom: 100px solid red;
     z-index: -1;
-    transform: rotate(-26deg) translateX(500px) translateY(400px);
+    transform: rotate(-26deg) translateX(880px) translateY(510px);
 }
 .triangle2 {
     position: absolute;
