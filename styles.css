@@ -206,7 +206,7 @@ aside .nav2 a:hover {
     width: 40%;
     height: 10px;
     border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
+    border-right: 0px solid transparent;
     border-bottom: 100px solid red;
     z-index: -1;
     transform: rotate(-26deg) translateX(880px) translateY(510px);
